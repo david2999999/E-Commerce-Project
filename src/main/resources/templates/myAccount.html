@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header"/>
+
+  <body>
+	<div th:replace="common/header :: navbar"/>
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<h2 class="section-headline"><span>User Account</span></h2>
+			</div>
+			<div class="col-xs-4">
+				<img src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3024338c801ac09e660b66e1cd5adb40&auto=format&fit=crop&w=1350&q=80" class="img-responsive">
+			</div>
+		</div>
+		<hr/>
+		
+		<div class="row" >
+			<div class="col-xs-9 col-xs-offset-3">
+				
+				<ul class="nav nav-tabs">
+					<li><a href="#tab-1" data-toggle="tab"><span style="color:skyblue">Create New Account</span></a></li>
+					<li><a href="#tab-2" data-toggle="tab"><span style="color:skyblue">Log In</span></a></li>
+					<li><a href="#tab-3" data-toggle="tab"><span style="color:skyblue">Forget Password</span></a></li>
+				</ul>
+			
+			</div>
+		</div>
+	</div> <!-- end of container -->
+
+	<div th:replace="common/header :: body-bottom-scripts"></div>
+  </body>
+</html>
