@@ -25,7 +25,81 @@
 					<li><a href="#tab-2" data-toggle="tab"><span style="color:skyblue">Log In</span></a></li>
 					<li><a href="#tab-3" data-toggle="tab"><span style="color:skyblue">Forget Password</span></a></li>
 				</ul>
-			
+				
+				<!-- Tab panels -->
+				<div class="tab-content">
+				
+					<div class="tab-pane fade" id="tab-1">
+						<div class="panel-group">
+							<div class="panel panel-default" style="border:none;">
+								<div class="panel-body" style="background-color:  #EC9787; margin-top: 20px" >
+									<form>
+										<div class="form-group">
+											<label for="newUsename">Username</label>
+											<input required="required" type="text" class="form-control" id="newUsername" name="username"/>
+											<p style="color#828282">Enter your username</p>
+										</div>
+										
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input required="required" type="text" class="form-control" id="email" name="email"/>
+											<p style="color#828282">Enter your Email</p>
+										</div>
+										
+										<button type="submit" class="btn btn-primary">Create New Button</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Log In -->
+					<div class="tab-pane fade" id="tab-2">
+						<div class="panel-group">
+							<div class="panel panel-default" style="border:none;">
+								<div class="panel-body" style="background-color: #00A591; margin-top: 20px" >
+									<form>
+										<div class="form-group">
+											<label for="newUsename">Username</label>
+											<input required="required" type="text" class="form-control" id="newUsername" name="username"/>
+											<p style="color#828282">Enter your username</p>
+										</div>
+										
+										<div class="form-group">
+											<label for="password">Password</label>
+											<input required="required" type="password" class="form-control" id="password" name="password"/>
+											<p style="color#828282">Enter your password</p>
+										</div>
+										
+										<button type="submit" class="btn btn-primary">Log In</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Forget Password -->
+					<div class="tab-pane fade" id="tab-3">
+						<div class="panel-group">
+							<div class="panel panel-default" style="border:none;">
+								<div class="panel-body" style="background-color: #00A591; margin-top: 20px" >
+									<form>
+										
+										<div class="form-group">
+											<label for="recoverEmail">Email</label>
+											<input required="required" type="password" class="form-control" id="recoverEmail" name="email"/>
+											<p style="color#828282">Enter your Email</p>
+										</div>
+										
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				</div>
 			</div>
 		</div>
 	</div> <!-- end of container -->
