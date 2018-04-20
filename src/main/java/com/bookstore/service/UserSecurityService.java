@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import com.bookstore.domain.User;
 import com.bookstore.repository.UserRepository;
 
+//Core interface which loads user-specific data.
+//It is used throughout the framework as a user DAO and is the strategy used by the DaoAuthenticationProvider.
+//The interface requires only one read-only method, which simplifies support for new data-access strategies.
 @Service
 public class UserSecurityService implements UserDetailsService{
 	

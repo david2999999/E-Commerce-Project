@@ -1,7 +1,5 @@
 package com.bookstore.domain;
 
-import static org.junit.Assert.fail;
-
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -24,6 +22,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
+
+// They simply store user information which is later encapsulated into Authentication objects. 
+// This allows non-security related user information 
+//(such as email addresses, telephone numbers etc) to be stored in a convenient location.
 @Entity
 @Data
 public class User implements UserDetails{
