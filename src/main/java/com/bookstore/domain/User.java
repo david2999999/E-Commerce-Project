@@ -45,6 +45,9 @@ public class User implements UserDetails{
 	private String phone;
 	private boolean enabled = true;
 	
+	//Marker annotation that indicates that the annotated method or 
+	//field is to be ignored by introspection-based serialization and 
+	//deserialization functionality. That is, it should not be consider a "getter", "setter" or "creator".
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JsonIgnore
 	private Set<UserRole> userRoles = new HashSet<>();
